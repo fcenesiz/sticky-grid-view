@@ -37,6 +37,26 @@ List<String> headers = [
 ```
 
 ```dart
+Future<void> initMap() async {
+  double width = 28;
+  double height = 20;
+  for (int i = 0; i < headers.length; i++) {
+    List<GridImage> gridItems = [];
+    double y = i * height;
+    int range = 5 + Random().nextInt(11);
+    for (int j = 0; j < range; j++) {
+      double x = j * width;
+      GridImage gridItem = GridImage.fromAssetPart(
+          'assets/images/all_flags.png', x, y, width, height);
+      await gridItem.initUiImage();
+      gridItems.add(gridItem);
+    }
+    map[headers[i]] = gridItems;
+  }
+}
+```
+    
+```dart
 Widget build(BuildContext context) {
   return FutureBuilder(
       future: init,
