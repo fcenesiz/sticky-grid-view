@@ -26,10 +26,10 @@ And then create the Map<String, List<GridImage>> map.
 
 <table>
   <tr>
-    <td><img src="https://github.com/fcenesiz/sticky_grid_view/blob/main/test_sticky.gif" align="center" height="600px" /></td>
-    <td><img src="https://github.com/fcenesiz/sticky_grid_view/blob/main/ss1.png" align="center" height="600px" /></td>
-    <td><img src="https://github.com/fcenesiz/sticky_grid_view/blob/main/ss2.png" align="center" height="600px" /></td>
-    <td><img src="https://github.com/fcenesiz/sticky_grid_view/blob/main/ss3.png" align="center" height="600px" /></td>
+    <td><img src="https://github.com/fcenesiz/sticky_grid_view/blob/main/test_sticky.gif" align="center" /></td>
+    <td><img src="https://github.com/fcenesiz/sticky_grid_view/blob/main/ss1.png" align="center" /></td>
+    <td><img src="https://github.com/fcenesiz/sticky_grid_view/blob/main/ss2.png" align="center"  /></td>
+    <td><img src="https://github.com/fcenesiz/sticky_grid_view/blob/main/ss3.png" align="center"  /></td>
   </tr>
 </table>
     
