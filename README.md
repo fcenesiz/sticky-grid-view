@@ -70,23 +70,27 @@ Future<void> initMap() async {
 ```dart
 Widget build(BuildContext context) {
   return FutureBuilder(
-      future: init,
-      builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) {
-          return const Center(child: CircularProgressIndicator());
-        }
-        if (snapshot.hasError) {
-          String error = "Error: " + snapshot.error.toString();
-          return Center(child: Text(error));
-        }
-        return StickyGridView(
-            headerFontSize: 19,
-            backgroundColor: Colors.deepPurple.shade50,
-            headerColor: Colors.deepPurple,
-            headerTextColor: Colors.white,
-            crossAxisCount: 6,
-            map: map,
-            headers: headers);
-      });
+            future: init,
+            builder: (context, snapshot) {
+              if (snapshot.connectionState == ConnectionState.waiting) {
+                return const Center(child: CircularProgressIndicator());
+              }
+              if (snapshot.hasError) {
+                String error = "Hata: " + snapshot.error.toString();
+                return Center(child: Text(error));
+              }
+              return StickyGridView(
+                  headerFontSize: 19,
+                  backgroundColor: Colors.deepPurple.shade50,
+                  headerColor: Colors.deepPurple,
+                  headerTextColor: Colors.white,
+                  crossAxisCount: 6,
+                  map: map,
+                  headers: headers,
+                  onClick: (section, index) {
+                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: Text('Section: $section, index: $index , header: ${headers[section]}'), duration: const Duration(milliseconds: 500),));
+                  });
+            });
 }
 ```
