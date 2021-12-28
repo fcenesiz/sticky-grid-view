@@ -70,14 +70,12 @@ Future<void> initMap() async {
 ```dart
 Widget build(BuildContext context) {
   return StickyGridView(
-                  crossAxisCount: 6,
-                  map: map,
-                  headers: headers,
-                  onClick: (section, index) {
-                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: Text('Section: $section, index: $index , header: ${headers[section]}'), duration: const Duration(milliseconds: 500),));
-                  });
-            }),
-      );
+      crossAxisCount: 6,
+      map: map,
+      headers: headers,
+      onClick: (section, index) {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text('Section: $section, index: $index , header: ${headers[section]}'), duration: const Duration(milliseconds: 500),));
+      });
 }
 ```
