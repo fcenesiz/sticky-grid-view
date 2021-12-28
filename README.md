@@ -24,7 +24,7 @@ In addition, StickyGridView optimizes itself and all its sub-elements and preven
 First, create the header list.
 And then create the Map<String, List<GridImage>> map.
 
-<img src="https://github.com/fcenesiz/sticky_grid_view/blob/main/image.gif" align="right" height="300px" />
+<img src="https://github.com/fcenesiz/sticky_grid_view/blob/main/image.gif" align="center" height="300px" />
     
 ```dart
 List<String> headers = [
