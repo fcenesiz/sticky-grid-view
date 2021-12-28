@@ -53,17 +53,17 @@ Future<void> initMap() async {
   double width = 28;
   double height = 20;
   for (int i = 0; i < headers.length; i++) {
-    List<GridImage> gridItems = [];
+    List<GridImage> gridImages = [];
     double y = i * height;
     int range = 5 + Random().nextInt(11);
     for (int j = 0; j < range; j++) {
       double x = j * width;
-      GridImage gridItem = GridImage.fromAssetPart(
+      GridImage gridImage = GridImage.fromAssetPart(
           'assets/images/all_flags.png', x, y, width, height);
-      await gridItem.initUiImage();
-      gridItems.add(gridItem);
+      await gridImage.initUiImage();
+      gridImages.add(gridItem);
     }
-    map[headers[i]] = gridItems;
+    map[headers[i]] = gridImages;
   }
 }
 ```
