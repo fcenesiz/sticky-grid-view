@@ -19,11 +19,6 @@ Therefore, the elements of the GridView are excluded from this state.
 
 In addition, StickyGridView optimizes itself and all its sub-elements and prevents delays.
 
-## Usage
-
-First, create the header list.
-And then create the Map<String, List<GridImage>> map.
-
 <table>
   <tr>
     <td><img src="https://github.com/fcenesiz/sticky_grid_view/blob/main/test_sticky.gif" align="center" /></td>
@@ -32,6 +27,13 @@ And then create the Map<String, List<GridImage>> map.
     <td><img src="https://github.com/fcenesiz/sticky_grid_view/blob/main/ss3.png" align="center"  /></td>
   </tr>
 </table>
+
+## Usage
+
+First, create the header list.
+And then create the Map<String, List<GridImage>> map.
+
+
     
 ```dart
 List<String> headers = [
