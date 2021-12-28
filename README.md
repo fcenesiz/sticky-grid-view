@@ -76,7 +76,7 @@ Widget build(BuildContext context) {
                 return const Center(child: CircularProgressIndicator());
               }
               if (snapshot.hasError) {
-                String error = "Hata: " + snapshot.error.toString();
+                String error = "Error: " + snapshot.error.toString();
                 return Center(child: Text(error));
               }
               return StickyGridView(
