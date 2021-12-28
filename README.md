@@ -70,10 +70,6 @@ Future<void> initMap() async {
 ```dart
 Widget build(BuildContext context) {
   return StickyGridView(
-                  headerFontSize: 19,
-                  backgroundColor: Colors.deepPurple.shade50,
-                  headerColor: Colors.deepPurple,
-                  headerTextColor: Colors.white,
                   crossAxisCount: 6,
                   map: map,
                   headers: headers,
