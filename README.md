@@ -48,6 +48,19 @@ List<String> headers = [
 ```
 
 ```dart
+// simple image
+GridImage image = GridImage.fromAsset('image.png');
+// or mapped image
+GridImage image = GridImage.fromAsset(
+  'image.png', // image
+  128, // x
+  0, // y
+  128, // width
+  128 // height
+);
+```
+
+```dart
 Future<void> initMap() async {
   double width = 28;
   double height = 20;
