@@ -19,6 +19,8 @@ Therefore, the elements of the GridView are excluded from this state.
 
 In addition, StickyGridView optimizes itself and all its sub-elements and prevents delays.
 
+pubdev link: https://pub.dev/packages/sticky_grid_view
+
 <table>
   <tr>
     <td><img src="https://github.com/fcenesiz/sticky_grid_view/blob/main/test_sticky.gif" align="center" /></td>
